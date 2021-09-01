@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Social Media Screen Time Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="index.js"></script>
+  </head>
+  <body class="body-container">
+    <div id="main-container">
+      <div class="image-container">
+          <img alt="Social media distract people" src="./image/blue.jpeg" />
+      </div>
+      <div class="headline-container">
+        <h1>
+          How long have you been using the Social Media today?
+        </h1>
+      </div>
+      <div class="add-button-container">
+          <div class="add-button-left"></div>
+          <button id="add-button">Add Watchlist</button>
+      </div>
+      <div class="table-container">
+        <table id="watch-list">
+          <tr>
+            <th>Name</th>
+            <th>Domain</th>
+            <th>Duration</th>
+            <th>Remove</th>
+            <th>Stop Watch</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="pop-up-window-container">
+      <button id="close-button">X</button>
+      <form id="watch-list-info" autocomplete="on">
+        <div id="info-part1">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div id="info-part2">
+            <label for="domain">Domain</label>
+            <input type="text" id="domain" required>
+        </div>
+      </form>
+      <div id="error-message">
+        <p>Item exists in watchlist already!</p>
+      </div>
+      <button id="submit-button">Submit</button>
+    </div>
+  </body>
+</html>
